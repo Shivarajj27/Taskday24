@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightcoral;
+            position: sticky;
+            top: 5px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 0.6rem;
+        }
+
+        img {
+            width: 90%;
+            height: 70vh;
+        }
+        .Hovertag{
+            display: grid;
+            grid-template-columns: 2% 2% 2% 2% ;
+            justify-content: center;
+        }
+        .Hovertag>p:hover{
+            background-color: black;
+            color: white;
+        }
+        #para{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+        }
+        .last2{
+            display: grid;
+            grid-template-rows: 8% 60% 5% 5% ;
+            justify-content: center;
+            text-align: center;
+        }
+        #chef{
+            width: 50%;
+            height: 70vh;
+
+        }
+        .divv{
+            display: grid;
+            grid-template-columns: 25% 35% 30%;
+            margin: 5%;
+            gap: 5%;
+        }
+        #img1{
+            width: 80%;
+            height: 9vh;
+        }
+        #img2{
+            width: 80%;
+            height: 9vh;
+        }
+        .divvv{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+        }
+        .divvv>p{
+            color: white;
+            width: 80%;
+            height: 4vh;
+            background-color: #a9a9a9;
+        }
+        .divvv>#travel{
+            background-color: black;
+        }
+        .Section{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .Section1{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        @media screen and (width>768px) and (width<968px){
+            .nav,.main,.divv{
+                display: grid;
+                grid-template-columns: auto auto auto ;
+            }
+        }
+        @media screen and (width>578px) and (width<768px){
+            .nav,.main,.divv{
+                display: grid;
+                grid-template-columns: auto auto;
+            } 
+        }
+        @media screen and (width<578px){
+            .nav,.main,.divv{
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div><i class="fa-solid fa-bars"></i></div>
+        <div>
+            <p>My Food</p>
+        </div>
+        <div>Mail</div>
+    </div>
+    <div class="main">
+        <div>
+            <div><img src="./cherries.jpg" alt=""></div>
+            <div>
+                <p>Cherries, interrupted</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="./sandwich.jpg" alt=""></div>
+            <div>
+                <p>The Perfect Sandwich, A Real NYC Classic</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="./steak.jpg" alt=""></div>
+            <div>
+                <p>Let Me Tell You About This Steak</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="./wine.jpg" alt=""></div>
+            <div>
+                <p>Once Again, Robust Wine and Vegetable Pasta</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div><img src="./popsicle.jpg" alt=""></div>
+            <div>
+                <p>All I Need Is a Popsicle</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="./sandwich.jpg" alt=""></div>
+            <div>
+                <p>Perfect Sandwich, A Real Classic</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="./salmon.jpg" alt=""></div>
+            <div>
+                <p>Salmon For Your Skin</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="./croissant.jpg" alt=""></div>
+            <div>
+                <p>Le French</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="Hovertag">
+        <p class="hover">1</p>
+        <p class="hover">2</p>
+        <p class="hover">3</p>
+        <p class="hover">4</p>
+        
+    </div>
+    <hr>
+    <div class="last2">
+        <div>
+            <p id="para">About Me, The Food Man</p>
+        </div>
+        <div>
+            <img src="./chef.jpg" alt="" id="chef"></div>
+        <div>
+            <p id="L1">I am Who I Am!</p>
+        </div>
+        <div>
+            <p id="L2">With Passion For Real, Good Food</p>
+        </div>
+        <div>
+            <p id="L3">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an
+                interest of
+                lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus
+                ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                congue gravida diam non fringilla.</p>
+        </div>
+    </div>
+    <hr>
+
+    <div class="divv">
+        <div>
+            <section>
+                <p>FOOTER</p>
+            </section>
+            <section>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+            </section>
+            <section>
+                <p>Powered by w3.css</p>
+            </section>
+        </div>
+        <div>
+            <section>
+                <p>BLOG POSTS</p>
+            </section>
+            <section class="Section">
+                <section>
+                    <p><img src="./workshop.jpg" alt="" id="img1"></p>
+                </section>
+                <section class="lorem">
+                    <p>Lorem</p>
+                    <p>Sed mattis nunc</p>
+                </section>
+            </section>
+            <hr>
+            <section class="Section1">
+                <section>
+                    <p><img src="./gondol.jpg" alt="" id="img2"></p>
+                </section>
+                <section>
+                    <p class="lorem1">Ipsum</p>
+                    <p>Praes tinci sed</p>
+                </section>
+            </section>
+        </div>
+        <div class="footerr">
+            <section>
+                <p>POPULAR TAGS</p>
+            </section>
+            <section class="divvv">
+                <p id="travel">Travel</p>
+                <p>New York</p>
+                <p>Dinner</p>
+                <p>Salmon</p>
+                <p>France</p>
+                <p>Drinks</p>
+                <p>Ideas</p>
+                <p>Flavours</p>
+                <p>Cuisine</p>
+                <p>Dressing</p>
+                <p>Fried</p>
+                <p>Fish</p>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
